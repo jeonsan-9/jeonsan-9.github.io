@@ -267,8 +267,10 @@ figure.cell figcaption {
 .sheet--more { grid-template-areas:
   "m1 m2 photo"
   "m3 m4 photo"
-  "m5 m5 photo"; }
+  "robot m5 photo"; }
 .c-m1 { grid-area: m1; } .c-m2 { grid-area: m2; } .c-m3 { grid-area: m3; } .c-m4 { grid-area: m4; } .c-m5 { grid-area: m5; } .c-photo { grid-area: photo; }
+.c-robot { grid-area: robot; }
+.c-robot img { display: block; width: 100%; height: auto; margin-top: 20px; }
 .sheet--more article.cell { min-height: 240px; }
 .sheet--more .tag { text-align: left; font-size: 11px; font-weight: 700; color: var(--red); letter-spacing: .02em; margin-bottom: 14px; }
 .sheet--more h4 { margin: 0 0 12px; font-size: 18px; font-weight: 600; letter-spacing: -.025em; line-height: 1.4; }
@@ -337,7 +339,7 @@ figure.cell figcaption {
   .sheet--py { grid-template-columns: 1fr 1fr; grid-template-areas:
     "model model" "q find" "nine nine" "cmp cmp" "res res"; }
   .sheet--am { grid-template-columns: 1fr 1fr; grid-template-areas: "screen screen" "bg2 flow" "cta cta"; }
-  .sheet--more { grid-template-columns: 1fr 1fr; grid-template-areas: "m1 m2" "m3 m4" "m5 m5" "photo photo"; }
+  .sheet--more { grid-template-columns: 1fr 1fr; grid-template-areas: "m1 m2" "m3 m4" "robot m5" "photo photo"; }
   .c-photo { min-height: 0; aspect-ratio: 4 / 3; }
 }
 @media (max-width: 640px) {
