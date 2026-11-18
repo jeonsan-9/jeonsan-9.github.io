@@ -22,7 +22,7 @@
         links.forEach(function (a) { a.classList.toggle('is-on', a.getAttribute('href') === '#' + e.target.id); });
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
-    ['about', 'story', 'index', 'record'].forEach(function (id) {
+    ['about', 'story', 'index', 'skills', 'record'].forEach(function (id) {
       var s = document.getElementById(id); if (s) spy.observe(s);
     });
   } else {

@@ -384,3 +384,116 @@ figure.cell figcaption {
 
 .cover__jump { margin-top: 20px; padding: 7px 2px; font-size: 14px; font-weight: 600; border-bottom: 1px solid currentColor; }
 .work-link { display: inline-block; margin-top: 12px; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ───────── 2026-11-18 restructure ───────── */
+/* Cover with portrait */
+.cover--split { display: grid; grid-template-columns: 1.15fr 1fr; align-items: end; text-align: left; padding-bottom: 0; gap: clamp(20px, 4vw, 64px); }
+.cover--split .cover__text { align-self: center; padding-bottom: 8vh; }
+.cover--split .cover__word { font-size: clamp(64px, 11.5vw, 210px); }
+.cover__photo { align-self: end; justify-self: end; width: min(100%, 640px); }
+.cover__photo img { width: 100%; height: auto; mix-blend-mode: multiply; }
+.hello--top { margin-top: 0; }
+.facts { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 44px; border-top: 1.5px solid var(--ink); max-width: 460px; }
+.facts li { padding: 16px 12px 0 0; }
+.facts b { display: block; font-size: clamp(40px, 4vw, 60px); font-weight: 500; letter-spacing: -.06em; line-height: 1; }
+.facts span { display: block; margin-top: 8px; font-size: 11px; color: var(--gray); line-height: 1.5; }
+
+/* Index with 5 */
+.index--5 { grid-template-columns: .7fr repeat(5, 1fr); gap: 28px; }
+.index--5 .index__no { font-size: clamp(64px, 7.4vw, 120px); }
+
+/* P01 extra cells */
+.sheet--hr { grid-template-areas:
+  "bg    key  sys"
+  "hw    key  alert"
+  "ai    ai   ai"
+  "res   res  res"
+  "p1    p2   p3"
+  "lim   lim  tl"; }
+.c-alert { grid-area: alert; } .c-tl { grid-area: tl; }
+.c-ai { grid-area: ai; min-height: 0; }
+.c-ai .bars { max-width: 720px; margin: 0 auto; }
+.c-ai .note { text-align: center; }
+.c-alert p { text-align: left; }
+.kv--sm { margin-top: 22px; }
+.kv--sm div { grid-template-columns: 44px 1fr; font-size: 12px; padding: 7px 0; }
+
+/* P03 robotics */
+.sheet--rb { grid-template-areas:
+  "rob    rob    ec"
+  "rob    rob    lesson"
+  "chain  chain  ph"
+  "r1     r2     ph"; }
+.c-rob { grid-area: rob; }
+.c-rob p { text-align: left; max-width: 560px; }
+.c-rob h4 { font-size: clamp(24px, 2.4vw, 34px) !important; }
+.rob__fig { margin-top: 28px; background: #F4F4F2; display: flex; flex-direction: column; align-items: center; padding: 24px; }
+.rob__fig img { width: min(100%, 560px); height: auto; mix-blend-mode: multiply; }
+.rob__fig figcaption { margin-top: 10px; font-size: 11px; font-weight: 600; color: var(--gray); }
+.c-ec { grid-area: ec; } .c-loop { grid-area: loop; } .c-lesson { grid-area: lesson; }
+.c-chain { grid-area: chain; } .c-rbph { grid-area: ph; } .c-r1 { grid-area: r1; } .c-r2 { grid-area: r2; }
+.sheet--rb .tag { text-align: left; font-size: 11px; font-weight: 700; color: var(--red); letter-spacing: .02em; margin-bottom: 14px; }
+.sheet--rb h4 { margin: 0 0 12px; font-size: 18px; font-weight: 600; letter-spacing: -.025em; line-height: 1.4; }
+.c-ec p, .c-r1 p, .c-r2 p, .c-lesson p:not(.cell__lead) { text-align: left; }
+.c-ec h4 { font-size: clamp(22px, 2vw, 28px) !important; }
+.c-lesson { display: flex; flex-direction: column; justify-content: center; }
+.loop li { display: grid; grid-template-columns: 30px 64px 1fr; gap: 6px; align-items: baseline; padding: 13px 0; border-top: 1px solid var(--line); font-size: 12.5px; color: var(--ink-2); }
+.loop li:last-child { border-bottom: 1px solid var(--line); }
+.loop span { font-size: 10px; font-weight: 700; color: var(--red); letter-spacing: .08em; }
+.loop b { font-size: 15px; color: var(--ink); font-weight: 700; }
+.chain { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 8px; counter-reset: c; }
+.chain li { position: relative; padding: 18px 22px 0 0; border-top: 3px solid var(--ink); }
+.chain li:not(:last-child)::after { content: ""; position: absolute; right: 10px; top: -9px; width: 0; height: 0; border-left: 9px solid var(--ink); border-top: 7.5px solid transparent; border-bottom: 7.5px solid transparent; }
+.chain li.is-hot { border-color: var(--red); }
+.chain b { display: block; font-size: clamp(15px, 1.4vw, 19px); font-weight: 700; letter-spacing: -.02em; }
+.chain li.is-hot b { color: var(--red); }
+.chain span { display: block; margin-top: 8px; font-size: 12px; color: var(--gray); line-height: 1.6; }
+.c-chain .note { text-align: left; margin-top: 30px; }
+.c-chain { min-height: 0; }
+.c-rbph { min-height: 520px; }
+
+/* Skills */
+.skills { padding-top: 140px; }
+.skills__head { margin-bottom: 48px; }
+.skills__head .hello { margin-top: 0; }
+.tools { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.tool { background: var(--paper); padding: 26px 24px 24px; min-height: 210px; display: flex; flex-direction: column; transition: background .3s var(--ease); }
+.tool:hover { background: #FBFBFA; }
+.tool__cat { font-size: 11px; font-weight: 700; color: var(--red); letter-spacing: .04em; }
+.tool h3 { margin: 14px 0 10px; font-size: clamp(18px, 1.5vw, 22px); font-weight: 600; letter-spacing: -.03em; line-height: 1.3; }
+.tool p { font-size: 12.5px; color: var(--ink-2); line-height: 1.7; }
+.tool .tool__use { margin-top: auto; padding-top: 16px; font-size: 11.5px; color: var(--gray); }
+.tool .tool__use::before { content: "Used in · "; font-weight: 700; color: var(--ink); }
+.skills__lic { margin-top: 56px; max-width: 760px; }
+
+@media (max-width: 960px) {
+  .cover--split { grid-template-columns: 1fr; text-align: center; padding-bottom: 0; }
+  .cover--split .cover__text { padding-bottom: 0; display: flex; flex-direction: column; align-items: center; }
+  .cover__photo { justify-self: center; width: min(88%, 520px); }
+  .index--5 { grid-template-columns: 1fr 1fr; }
+  .sheet--hr { grid-template-columns: 1fr 1fr; grid-template-areas:
+    "bg bg" "key sys" "key hw" "alert alert" "ai ai" "res res" "p1 p2" "p3 p3" "lim lim" "tl tl"; }
+  .sheet--rb { grid-template-columns: 1fr 1fr; grid-template-areas:
+    "rob rob" "ec lesson" "chain chain" "ph ph" "r1 r2"; }
+  .c-rbph { min-height: 0; aspect-ratio: 4 / 3; }
+  .chain { grid-template-columns: 1fr 1fr; row-gap: 28px; }
+  .tools { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .cover__photo { width: 100%; }
+  .index--5 { grid-template-columns: 1fr; }
+  .sheet--hr, .sheet--rb { grid-template-columns: 1fr; grid-template-areas: none; }
+  .sheet--hr > *, .sheet--rb > * { grid-area: auto !important; }
+  .chain { grid-template-columns: 1fr; }
+  .chain li:not(:last-child)::after { display: none; }
+  .tools { grid-template-columns: 1fr; }
+  .tool { min-height: 0; }
+  .skills { padding-top: 100px; }
+  .facts { max-width: none; }
+}
+.sheet--more { grid-template-areas: "m1 m2 photo" "m3 m4 photo"; }
+.tool .tool__use::before { content: "근거 · "; }
+.skills__lic { max-width: none; }
+.skills__lic ul { display: grid; grid-template-columns: 1fr 1fr; column-gap: 64px; }
+@media (max-width: 960px) { .sheet--more { grid-template-areas: "m1 m2" "m3 m4" "photo photo"; } }
+@media (max-width: 640px) { .skills__lic ul { grid-template-columns: 1fr; } }

@@ -11,7 +11,7 @@
 <meta name="theme-color" content="#F7F7F5">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/css/style.css?v=20261118-review">
+<link rel="stylesheet" href="assets/css/style.css?v=20261118h">
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
@@ -23,6 +23,7 @@
     <a href="#about">About</a>
     <a href="#story">Story</a>
     <a href="#index">Works</a>
+    <a href="#skills">Skills</a>
     <a href="#record">Record</a>
   </nav>
 </header>
@@ -30,27 +31,34 @@
 <main>
 
 <!-- ───────── Cover ───────── -->
-<section class="spread cover" id="cover">
-  <h1 class="cover__word reveal">Sanghun<span class="dot">.</span></h1>
-  <span class="cover__rule reveal" aria-hidden="true"></span>
-  <p class="cover__name reveal">전상훈</p>
-  <p class="cover__sub reveal">Jeon Sanghun · Mechanical Engineering<br>2026 Portfolio</p>
-  <a class="cover__jump" href="#p01">스마트 헤드레스트 보기 <span aria-hidden="true">↓</span></a>
+<section class="spread cover cover--split" id="cover">
+  <div class="cover__text">
+    <h1 class="cover__word reveal">Sanghun<span class="dot">.</span></h1>
+    <span class="cover__rule reveal" aria-hidden="true"></span>
+    <p class="cover__name reveal">전상훈</p>
+    <p class="cover__sub reveal">Jeon Sanghun · Mechanical Engineering<br>2026 Portfolio</p>
+    <a class="cover__jump reveal" href="#index">대표 작업 보기 <span aria-hidden="true">↓</span></a>
+  </div>
+  <figure class="cover__photo reveal">
+    <img src="assets/img/profile.jpg" alt="전상훈 정면 프로필 사진" width="995" height="864">
+  </figure>
 </section>
 
 <!-- ───────── About ───────── -->
 <section class="spread about" id="about">
   <div class="about__left">
-    <figure class="portrait reveal">
-      <img src="assets/img/profile.jpg" alt="전상훈 정면 프로필 사진" width="995" height="864">
-    </figure>
-    <p class="hello reveal">기계공학도 <span class="hello__dash" aria-hidden="true"></span><br><b>전상훈</b> 입니다.</p>
+    <p class="hello hello--top reveal">기계공학도 <span class="hello__dash" aria-hidden="true"></span><br><b>전상훈</b> 입니다.</p>
     <p class="motto reveal">모르면 배우고, 시작했으면 끝까지 해낸다.</p>
     <dl class="contact reveal">
       <div><dt>School</dt><dd>계명대학교 기계공학과 · 2027.02 졸업예정</dd></div>
       <div><dt>Goal</dt><dd>공기업 기계직 — 시민이 쓰는 설비를 지키는 기술인</dd></div>
       <div><dt>Like</dt><dd>천체관측 · 사진 촬영 · AI로 시제품 만들기</dd></div>
     </dl>
+    <ul class="facts reveal">
+      <li><b>8</b><span>맡은 역할<br>팀장 · 회장 · 제1저자</span></li>
+      <li><b>9</b><span>자격 · 면허<br>· 인증</span></li>
+      <li><b>9</b><span>수상<br>2014 — 2026</span></li>
+    </ul>
   </div>
 
   <div class="about__right">
@@ -75,31 +83,6 @@
         <li><span>사진 동아리 KMPAC — 장비 고장·분실 0건</span><time>촬영부장</time></li>
         <li><span>선진시뮬레이션 연구실(ASL) · 2024.07–</span><time>학부연구생</time></li>
         <li><span>동산도서관 독서토론클럽</span><time>팀장</time></li>
-      </ul>
-    </div>
-    <div class="list reveal">
-      <h2>License</h2>
-      <ul>
-        <li><span>산업안전산업기사</span><time>21.06</time></li>
-        <li><span>컴퓨터활용능력 1급</span><time>20.12</time></li>
-        <li><span>컴퓨터그래픽스운용기능사</span><time>15.04</time></li>
-        <li><span>컴퓨터응용선반기능사</span><time>14.06</time></li>
-        <li><span>임베디드기능사 (구 전자계산기기능사)</span><time>13.12</time></li>
-        <li><span>한국사능력검정 2급</span><time>21.06</time></li>
-        <li><span>운전면허</span><time>16.07</time></li>
-        <li><span>DIAT 멀티미디어제작 고급 · 모바일앱개발전문가</span><time>14.08</time></li>
-        <li><span>ITQ 한글 엑셀 · 파워포인트 A등급</span><time>13.11</time></li>
-      </ul>
-    </div>
-    <div class="list reveal">
-      <h2>Skills</h2>
-      <ul>
-        <li><span><b>AutoCAD</b> 2D 제도 — 투상도 · 단면도 · 치수 · 공차</span><time>CAD</time></li>
-        <li><span><b>Fusion 360</b> 3D 모델링 · 선형 정적 유한요소해석</span><time>3D/CAE</time></li>
-        <li><span><b>CNC 선반</b> 컴퓨터응용선반기능사</span><time>MFG</time></li>
-        <li><span><b>Python</b> · OpenCV · MediaPipe · Raspberry Pi · Arduino</span><time>HW/SW</time></li>
-        <li><span><b>Excel</b> · PowerPoint — 컴활 1급 · ITQ A등급</span><time>Office</time></li>
-        <li><span><b>Photoshop · Lightroom</b> 사진 보정 · 카드뉴스 · 홍보영상</span><time>Media</time></li>
       </ul>
     </div>
   </div>
@@ -153,7 +136,7 @@
       <span class="chap__yr">2026</span>
       <div class="chap__body">
         <h3>새 기술을 익혀 작품과 연구로</h3>
-        <p>캡스톤 팀장으로 Python·OpenCV·Raspberry Pi를 처음 배워 스마트 헤드레스트를 완성했고, <b>학과 1위, 교내 최우수상</b>을 받고 DIFA에서 전시했습니다. 생성형 AI 공모전에서 장려상을 받은 <b>안심집 지도</b> 프로토타입은 보완을 거듭해 <b>지역혁신 페스티발 최우수상</b>으로 이어졌습니다. 자원공유 멘토링에서는 팀장으로 <b>1등</b>을 했습니다. 전산구조해석 수업에서 시작한 공부는 <b>제1저자 파일런 연구</b>가 되었습니다. 지도교수님과 8번 넘게 만나며 원고를 <b>42번</b> 고쳐 썼습니다.</p>
+        <p>캡스톤 팀장으로 Python·OpenCV·Raspberry Pi를 처음 배워 스마트 헤드레스트를 완성했고, <b>학과 1위, 교내 최우수상</b>을 받고 DIFA에서 전시했습니다. 생성형 AI 공모전에서 장려상을 받은 <b>안심집 지도</b> 프로토타입은 보완을 거듭해 <b>지역혁신 페스티발 최우수상</b>으로 이어졌습니다. 자원공유 멘토링에서는 팀장으로 <b>1등</b>을 했습니다. RISE 산학협력 동아리에서는 <b>사족보행 로봇</b>의 기계 부품을 설계했고, ARDUINO 메이커 공모전에서는 e-코너 차량의 아두이노 작업으로 장려상을 받았습니다. 전산구조해석 수업에서 시작한 공부는 <b>제1저자 파일런 연구</b>가 되었습니다. 지도교수님과 8번 넘게 만나며 원고를 <b>42번</b> 고쳐 썼습니다.</p>
       </div>
       <p class="chap__tag">4th year</p>
     </li>
@@ -181,12 +164,12 @@
 </section>
 
 <!-- ───────── Index ───────── -->
-<section class="spread index" id="index">
+<section class="spread index index--5" id="index">
   <p class="index__label reveal">Works<br><span aria-hidden="true">/</span></p>
   <a class="index__item reveal" href="#p01">
     <span class="index__no">01</span>
     <span class="index__cat">Hardware &amp; Test</span>
-    <span class="index__list">스마트 헤드레스트<br>Capstone · 팀장<br>Team 문제적 남자들</span>
+    <span class="index__list">스마트 헤드레스트<br>Capstone · 팀장<br>학과 1위 · 교내 최우수</span>
   </a>
   <a class="index__item reveal" href="#p02">
     <span class="index__no">02</span>
@@ -195,13 +178,18 @@
   </a>
   <a class="index__item reveal" href="#p03">
     <span class="index__no">03</span>
-    <span class="index__cat">Team &amp; Service</span>
-    <span class="index__list">문제적 사람들<br>안심집 지도<br>Team Site →</span>
+    <span class="index__cat">Robotics &amp; Control</span>
+    <span class="index__list">사족보행 로봇<br>e-코너 차량 · 장려상<br>Raspberry Pi · Arduino</span>
   </a>
   <a class="index__item reveal" href="#p04">
     <span class="index__no">04</span>
+    <span class="index__cat">Team &amp; Service</span>
+    <span class="index__list">문제적 사람들<br>안심집 지도 · 최우수<br>Team Site →</span>
+  </a>
+  <a class="index__item reveal" href="#p05">
+    <span class="index__no">05</span>
     <span class="index__cat">More</span>
-    <span class="index__list">국제지역학 포스터 · 사족보행 로봇<br>동역학 공동연구 · e-코너 차량<br>Photography</span>
+    <span class="index__list">국제지역학 포스터<br>동역학 공동연구 · 멘토링<br>Photography</span>
   </a>
 </section>
 
@@ -235,6 +223,30 @@
         <div><dt>시험</dt><dd>정차 차량 시험 준비 · 측정 · 로그 · 분석</dd></div>
       </dl>
     </article>
+    <article class="cell c-alert reveal">
+      <h3>Alert System</h3>
+      <p>카메라 판단 결과에 따라 경고를 네 단계로 키웁니다.</p>
+      <ol class="steps">
+        <li><span>01</span>Safe</li>
+        <li><span>02</span>Caution</li>
+        <li><span>03</span>Warning</li>
+        <li class="is-hot"><span>04</span>Critical</li>
+      </ol>
+      <dl class="kv kv--sm">
+        <div><dt>판단</dt><dd>Raspberry Pi 5 + AI HAT+</dd></div>
+        <div><dt>출력</dt><dd>Arduino Uno · HC-06 → 진동 · 부저 · 스피커</dd></div>
+        <div><dt>전원</dt><dd>X1200 UPS · 7인치 터치 디스플레이</dd></div>
+      </dl>
+    </article>
+    <article class="cell c-ai reveal">
+      <h3>AI Model</h3>
+      <dl class="bars">
+        <div><dt>졸음</dt><dd><i style="--v:98.4%"></i><span>98.4%</span></dd></div>
+        <div><dt>하품</dt><dd><i style="--v:99.6%"></i><span>99.6%</span></dd></div>
+        <div><dt>휴대폰</dt><dd><i style="--v:97.5%"></i><span>97.5%</span></dd></div>
+      </dl>
+      <p class="note">팀 학습 모델 · 검증 데이터 기준 · AIHub 원천 약 15TB에서 24,256장 선별</p>
+    </article>
     <article class="cell c-hw reveal">
       <h3>Troubleshooting</h3>
       <p>전시 중 장치가 켜지지 않았습니다. 멀티미터로 전압을 재 <b>전원 용량 부족</b>을 찾아 고쳤고, 켜는 순서를 매뉴얼로 만들어 남은 기간엔 누구나 켤 수 있게 했습니다.</p>
@@ -251,10 +263,15 @@
     <figure class="cell c-p1 reveal"><img src="assets/img/hr_proto.jpg" alt="카메라와 디스플레이가 연결된 헤드레스트 시제품" loading="lazy"><figcaption>Prototype — 시제품</figcaption></figure>
     <figure class="cell c-p2 reveal"><img src="assets/img/fix_booth.jpg" alt="FIX 2026 WE-Meet 전시 부스 전경" loading="lazy"><figcaption>Booth — FIX 2026</figcaption></figure>
     <figure class="cell c-p3 reveal"><img src="assets/img/fix_spec.jpg" alt="스마트 헤드레스트 전시 제원판" loading="lazy"><figcaption>Spec Board — 제원판</figcaption></figure>
-    <a class="cell cell--dark c-lim c-link reveal" href="team/#p01">
+    <article class="cell c-lim reveal">
+      <h3>Limit &amp; Next</h3>
+      <p>실주행·저조도 시험은 아직 하지 않았습니다. 헤드레스트 전후 위치를 조절하는 리프트 기구는 설계·제작했지만 운반 중 파손되어 시연에서 제외했습니다.</p>
+      <p class="note">함께한 팀 — 전상훈(팀장) · 김기주 · 조환호 · Deniz Felix Unglaube</p>
+    </article>
+    <a class="cell cell--dark c-tl c-link reveal" href="team/#p01">
       <h3>Team Page</h3>
-      <p class="cta__big">팀 페이지에서 자세히 보기 <span aria-hidden="true">→</span></p>
-      <p class="note">하드웨어 · AI 모델 · 경고 단계 · 팀원</p>
+      <p class="cta__big">팀 기록 보기 <span aria-hidden="true">→</span></p>
+      <p class="note">회의 · 멘토링 · 팀원 역할</p>
     </a>
   </div>
 </section>
@@ -304,10 +321,65 @@
   </div>
 </section>
 
-<!-- ───────── P03 Team ───────── -->
+<!-- ───────── P03 Robotics ───────── -->
 <section class="project" id="p03">
   <header class="ptitle">
     <span class="ptitle__no reveal">03</span>
+    <div class="reveal">
+      <p class="ptitle__meta">RISE 산학협력 동아리 · ARDUINO 메이커 공모전 · 캡스톤 제어부 · K-Circle · ASL</p>
+      <h2 class="ptitle__name">Robotics &amp; Control</h2>
+      <p class="ptitle__ko">설계한 것을 실제로 움직이게 하기</p>
+    </div>
+  </header>
+
+  <div class="sheet sheet--rb">
+    <article class="cell c-rob reveal">
+      <p class="tag">RISE 산학협력 동아리 · 2026.02 — 07</p>
+      <h4>소형 사족보행 로봇</h4>
+      <p>다리마다 <b>3개의 자유도</b>를 가진 보행 로봇을 팀으로 제작했습니다. 저는 <b>기계 부품을 설계</b>하고 전체 구조에 맞는지 검토했습니다. 팀원들과 설계안을 수정하고 결과보고서를 작성했습니다.</p>
+      <figure class="rob__fig"><img src="assets/img/quadruped-assembly.webp" width="455" height="252" alt="사족보행 로봇의 몸체와 네 다리를 조립한 CAD 모델" loading="lazy"><figcaption>CAD Assembly — 몸체 · 네 다리</figcaption></figure>
+    </article>
+    <article class="cell c-ec reveal">
+      <p class="tag">Maker · 부팀장 · 장려상(3위) · 2026.09</p>
+      <h4>소형 e-코너 차량</h4>
+      <p>ARDUINO 메이커 공모전(엔티렉스)에서 소형 e-코너 차량의 <b>아두이노 작업</b>을 맡았습니다.</p>
+    </article>
+    <article class="cell c-lesson reveal">
+      <h3>Lesson</h3>
+      <p class="cell__lead">회로도 없이 시작한 대가는<br>유지보수에서 돌아왔습니다.</p>
+      <p>e-코너 차량을 고칠 때마다 연결 구조를 처음부터 다시 파악해야 했습니다. 이제는 제작 전에 <b>회로도와 연결 정보를 먼저 정리</b>하고, 바뀐 내용도 기록으로 남깁니다.</p>
+    </article>
+    <article class="cell c-chain reveal">
+      <h3>Control Chain — Smart Headrest</h3>
+      <ol class="chain">
+        <li><b>Camera</b><span>운전자 얼굴</span></li>
+        <li><b>Raspberry Pi 5</b><span>Python · OpenCV · MediaPipe<br>눈 · 입 · 고개 방향 판단</span></li>
+        <li><b>Arduino Uno</b><span>HC-06<br>경고 출력 제어</span></li>
+        <li class="is-hot"><b>Actuator</b><span>진동 모터 · 부저 · 스피커<br>헤드레스트 전진 보조</span></li>
+      </ol>
+      <p class="note">캡스톤 팀장으로 Raspberry Pi와 Arduino를 처음 배워 연결했습니다. 전진 보조 리프트는 운반 중 파손되어 시연에서 제외.</p>
+    </article>
+    <figure class="cell c-rbph reveal">
+      <img src="assets/img/hr_inside.jpg" alt="분해한 헤드레스트 내부의 배선과 보드" loading="lazy">
+      <figcaption>Wiring — 헤드레스트 내부 배선</figcaption>
+    </figure>
+    <article class="cell c-r1 reveal">
+      <p class="tag">Study · 부팀장 · 2025</p>
+      <h4>K-Circle FNI — 자율주행</h4>
+      <p>연구실 구성원들과 자율주행의 센싱 · 인지 · 판단 · 제어 · 통신을 공부했습니다. 센서의 정확도와 비용처럼 기술을 고를 때의 조건을 비교하는 눈을 얻었고, 자금 사용 기록을 맡았습니다.</p>
+    </article>
+    <article class="cell c-r2 reveal">
+      <p class="tag">Lab · 학부연구생 · 2024.07 —</p>
+      <h4>선진시뮬레이션 연구실 ASL</h4>
+      <p>류하오 교수님 연구실에서 4족 보행로봇을 비롯한 연구 주제를 접하며 관심 분야를 넓혔습니다. 동역학·제어·로봇부문 학술대회 공동저자 포스터로 이어졌습니다.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ───────── P04 Team ───────── -->
+<section class="project" id="p04">
+  <header class="ptitle">
+    <span class="ptitle__no reveal">04</span>
     <div class="reveal">
       <p class="ptitle__meta">계명대학교 기계공학과 팀 · 대회 참가명 ‘문제적 남자들’ · 팀장</p>
       <h2 class="ptitle__name">problematic</h2>
@@ -339,10 +411,10 @@
   </div>
 </section>
 
-<!-- ───────── P04 More ───────── -->
-<section class="project" id="p04">
+<!-- ───────── P05 More ───────── -->
+<section class="project" id="p05">
   <header class="ptitle">
-    <span class="ptitle__no reveal">04</span>
+    <span class="ptitle__no reveal">05</span>
     <div class="reveal">
       <p class="ptitle__meta">연구 · 공모전 · 사진</p>
       <h2 class="ptitle__name">More Works</h2>
@@ -368,17 +440,6 @@
       <p>성당중학교에서 AR 천체관측과 간이망원경 체험을 진행했습니다. 예산이 80만 원에서 40만 원으로 줄자 조별 활동으로 다시 설계했고, 응답 17명 전원이 만족했습니다.</p>
     </article>
     <article class="cell c-m4 reveal">
-      <p class="tag">Maker · 부팀장 · 장려상(3위)</p>
-      <h4>소형 e-코너 차량</h4>
-      <p>아두이노 메이커 공모전에서 소형 e-코너 차량의 아두이노 작업을 맡았습니다.</p>
-    </article>
-    <article class="cell c-robot reveal">
-      <p class="tag">RISE 산학협력 동아리 · 2026.02–07</p>
-      <h4>소형 사족보행 로봇</h4>
-      <p>다리마다 3개의 자유도를 가진 보행 로봇을 팀으로 제작했습니다. 저는 기계 부품을 설계하고 전체 구조에 맞는지 검토했습니다. 팀원들과 설계안을 수정하고 결과보고서를 작성했습니다.</p>
-      <img src="assets/img/quadruped-assembly.webp" width="455" height="252" alt="사족보행 로봇의 몸체와 네 다리를 조립한 CAD 모델" loading="lazy">
-    </article>
-    <article class="cell c-m5 reveal">
       <p class="tag">Ongoing</p>
       <h4>에스컬레이터 피로수명 예측 AI</h4>
       <p>구조해석과 Python, 두 갈래 공부가 만난 주제. 고장 나기 전에 알아채는 정비를 목표로 개발 중입니다.</p>
@@ -387,6 +448,38 @@
       <img src="assets/img/photo_golden.jpg" alt="노을 진 억새밭 풍경 사진 작품 '황금녘'" loading="lazy">
       <figcaption>Photography — ‘황금녘’ · KMPAC</figcaption>
     </figure>
+  </div>
+</section>
+
+<!-- ───────── Skills ───────── -->
+<section class="spread skills" id="skills">
+  <div class="skills__head">
+    <p class="hello reveal">Skills <span class="hello__dash" aria-hidden="true"></span><br><b>할 줄 아는 것</b></p>
+    <p class="motto reveal">도구마다 실제로 쓴 곳을 함께 적었습니다.</p>
+  </div>
+  <ol class="tools">
+    <li class="tool reveal"><span class="tool__cat">CAD</span><h3>AutoCAD</h3><p>2D 제도 — 투상도 · 단면도 · 치수 · 공차</p><p class="tool__use">대건테크 CAD 도면 설계 · 기계제도</p></li>
+    <li class="tool reveal"><span class="tool__cat">3D / CAE</span><h3>Fusion 360</h3><p>3D 모델링 · 선형 정적 유한요소해석</p><p class="tool__use">파일런 9개 모델 해석 · 제1저자</p></li>
+    <li class="tool reveal"><span class="tool__cat">Control</span><h3>Raspberry Pi · Arduino</h3><p>카메라 판단 결과 → 경고 장치 출력 연결</p><p class="tool__use">스마트 헤드레스트 · e-코너 차량</p></li>
+    <li class="tool reveal"><span class="tool__cat">Vision</span><h3>Python · OpenCV · MediaPipe</h3><p>얼굴 특징점 · PERCLOS 졸음 판단</p><p class="tool__use">스마트 헤드레스트</p></li>
+    <li class="tool reveal"><span class="tool__cat">MFG</span><h3>CNC 선반</h3><p>컴퓨터응용선반기능사</p><p class="tool__use">공업고등학교 재학 중 자격 취득 (14.06)</p></li>
+    <li class="tool reveal"><span class="tool__cat">Safety</span><h3>현장 안전관리</h3><p>산업안전산업기사</p><p class="tool__use">건설현장 안전감시단 · 안전관리자</p></li>
+    <li class="tool reveal"><span class="tool__cat">Office</span><h3>Excel · PowerPoint</h3><p>데이터 정리 · 문서 · 발표 자료</p><p class="tool__use">컴퓨터활용능력 1급 · ITQ A등급</p></li>
+    <li class="tool reveal"><span class="tool__cat">Media</span><h3>Photoshop · Lightroom</h3><p>사진 보정 · 카드뉴스 · 홍보영상</p><p class="tool__use">KMPAC 촬영부장 · 기자단 팀장</p></li>
+  </ol>
+  <div class="list skills__lic reveal">
+    <h2>License</h2>
+    <ul>
+      <li><span>산업안전산업기사</span><time>21.06</time></li>
+      <li><span>컴퓨터활용능력 1급</span><time>20.12</time></li>
+      <li><span>컴퓨터그래픽스운용기능사</span><time>15.04</time></li>
+      <li><span>컴퓨터응용선반기능사</span><time>14.06</time></li>
+      <li><span>임베디드기능사 (구 전자계산기기능사)</span><time>13.12</time></li>
+      <li><span>한국사능력검정 2급</span><time>21.06</time></li>
+      <li><span>운전면허</span><time>16.07</time></li>
+      <li><span>DIAT 멀티미디어제작 고급 · 모바일앱개발전문가</span><time>14.08</time></li>
+      <li><span>ITQ 한글 엑셀 · 파워포인트 A등급</span><time>13.11</time></li>
+    </ul>
   </div>
 </section>
 
@@ -456,6 +549,6 @@
 </section>
 
 </main>
-<script src="assets/js/main.js?v=20261118e" defer></script>
+<script src="assets/js/main.js?v=20261118h" defer></script>
 </body>
 </html>
