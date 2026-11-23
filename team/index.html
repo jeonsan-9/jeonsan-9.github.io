@@ -11,10 +11,12 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/Pretendard-subset.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:image" content="https://jeonsan-9.github.io/team/assets/img/hr_proto.jpg">
-<link rel="stylesheet" href="assets/css/style.css?v=20261123a">
+<link rel="stylesheet" href="assets/css/style.css?v=20261123b">
 <script>document.documentElement.classList.add("js")</script>
 <style id="crew-style">
-.deck { grid-template-columns: repeat(4, 1fr); max-width: 440px; }
+.deck { grid-template-columns: repeat(3, 1fr); max-width: 360px; }
+.deck__alumni { margin-top: 12px; max-width: 360px; font-size: 12px; line-height: 1.6; color: #8A90A0; }
+.deck__alumni b { color: var(--navy); font-weight: 700; margin-right: 6px; }
 .mini__ph { position: absolute; left: 24%; right: 9%; top: 13%; height: 37%; overflow: hidden; background: #E9ECF2; text-decoration: none; }
 .mini__ph img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; display: block; }
 .mini__ph--none { background: #E9ECF2 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 36'%3E%3Ccircle cx='20' cy='14' r='7' fill='%23C9CED9'/%3E%3Cpath d='M6 36c1-9 7-13 14-13s13 4 14 13z' fill='%23C9CED9'/%3E%3C/svg%3E") center bottom / 62% no-repeat; }
@@ -56,20 +58,18 @@
 <!-- ───────── 01 About ───────── -->
 <section class="spread about" id="about">
   <div class="about__left">
-    <div class="deck reveal" aria-label="팀원 명찰 11장">
-      <div class="mini mini--lead"><i></i><span>NO.01</span><u class="mini__ph"><img src="assets/img/members/jeon.jpg?v=20261123a" alt="전상훈" loading="lazy"></u><b>전상훈</b><em>팀장</em></div>
-      <div class="mini"><i></i><span>NO.02</span><u class="mini__ph"><img src="assets/img/members/jang.jpg?v=20261123a" alt="장원준" loading="lazy"></u><b>장원준</b><em>팀원</em></div>
+    <div class="deck reveal" aria-label="팀원 명찰 8장">
+      <div class="mini mini--lead"><i></i><span>NO.01</span><u class="mini__ph"><img src="assets/img/members/jeon.jpg?v=20261123b" alt="전상훈" loading="lazy"></u><b>전상훈</b><em>팀장</em></div>
+      <div class="mini"><i></i><span>NO.02</span><u class="mini__ph"><img src="assets/img/members/jang.jpg?v=20261123b" alt="장원준" loading="lazy"></u><b>장원준</b><em>팀원</em></div>
       <div class="mini"><i></i><span>NO.03</span><u class="mini__ph mini__ph--none" aria-hidden="true"></u><b>김형우</b><em>팀원</em></div>
-      <div class="mini"><i></i><span>NO.04</span><u class="mini__ph"><img src="assets/img/members/choi.jpg?v=20261123a" alt="최병재" loading="lazy"></u><b>최병재</b><em>팀원</em></div>
-      <div class="mini"><i></i><span>NO.05</span><u class="mini__ph mini__ph--none" aria-hidden="true"></u><b>김기주</b><em>팀원</em></div>
-      <div class="mini"><i></i><span>NO.06</span><u class="mini__ph mini__ph--none" aria-hidden="true"></u><b>조환호</b><em>팀원</em></div>
-      <div class="mini mini--latin"><i></i><span>NO.07</span><u class="mini__ph mini__ph--none" aria-hidden="true"></u><b>Deniz</b><em>팀원</em></div>
-      <div class="mini"><i></i><span>NO.08</span><u class="mini__ph"><img src="assets/img/members/nam.jpg?v=20261123a" alt="남재현" loading="lazy"></u><b>남재현</b><em>팀원</em></div>
-      <div class="mini"><i></i><span>NO.09</span><u class="mini__ph"><img src="assets/img/members/yoo.jpg?v=20261123a" alt="유지호" loading="lazy"></u><b>유지호</b><em>팀원</em></div>
-      <div class="mini"><i></i><span>NO.10</span><u class="mini__ph mini__ph--none" aria-hidden="true"></u><b>정명현</b><em>팀원</em></div>
-      <div class="mini"><i></i><span>NO.11</span><u class="mini__ph mini__ph--none" aria-hidden="true"></u><b>이가연</b><em>팀원</em></div>
+      <div class="mini"><i></i><span>NO.04</span><u class="mini__ph"><img src="assets/img/members/choi.jpg?v=20261123b" alt="최병재" loading="lazy"></u><b>최병재</b><em>팀원</em></div>
+      <div class="mini"><i></i><span>NO.05</span><u class="mini__ph"><img src="assets/img/members/nam.jpg?v=20261123b" alt="남재현" loading="lazy"></u><b>남재현</b><em>팀원</em></div>
+      <div class="mini"><i></i><span>NO.06</span><u class="mini__ph"><img src="assets/img/members/yoo.jpg?v=20261123b" alt="유지호" loading="lazy"></u><b>유지호</b><em>팀원</em></div>
+      <div class="mini"><i></i><span>NO.07</span><u class="mini__ph mini__ph--none" aria-hidden="true"></u><b>정명현</b><em>팀원</em></div>
+      <div class="mini"><i></i><span>NO.08</span><u class="mini__ph mini__ph--none" aria-hidden="true"></u><b>이가연</b><em>팀원</em></div>
       <div class="mini mini--seal" aria-hidden="true"><i></i><strong>문제적<br>사람들</strong><small>똑바로 해라.</small></div>
     </div>
+    <p class="deck__alumni reveal"><b>캡스톤(헤드레스트) 참여</b> 김기주 · 조환호 · Deniz Felix Unglaube</p>
     <p class="hello reveal">팀 <span class="hello__dash" aria-hidden="true"></span><br><b>문제적 사람들</b>입니다.</p>
     <dl class="contact reveal">
       <div><dt>School</dt><dd>계명대학교 기계공학과</dd></div>
@@ -128,9 +128,6 @@
         <li><span><b>장원준</b> 영상·발표 콘텐츠 제작 · 문서 정리</span><time>안심집 · 드래프톤</time></li>
         <li><span><b>김형우</b> 주거환경 자료 조사 · 아이디어 보완</span><time>안심집</time></li>
         <li><span><b>최병재</b> 제작 일정 조율 · 발표 슬라이드 제작</span><time>안심집</time></li>
-        <li><span><b>김기주</b> 헤드레스트 기구 제작</span><time>헤드레스트</time></li>
-        <li><span><b>조환호</b> 헤드레스트 설계 · 문서</span><time>헤드레스트</time></li>
-        <li><span><b>Deniz Felix Unglaube</b> 회로 · 하드웨어</span><time>헤드레스트</time></li>
         <li><span><b>남재현</b> AI 설계 패턴 · 정책 도구</span><time>드래프톤</time></li>
         <li><span><b>유지호</b> 포스터 · 발표 템플릿 · 도식</span><time>드래프톤</time></li>
         <li><span><b>정명현</b> 디자인</span><time>자원공유</time></li>
@@ -307,6 +304,6 @@
 </section>
 
 </main>
-<script src="assets/js/main.js?v=20261123a" defer></script>
+<script src="assets/js/main.js?v=20261123b" defer></script>
 </body>
 </html>
