@@ -11,7 +11,7 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/Pretendard-subset.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:image" content="https://jeonsan-9.github.io/team/assets/img/hr_proto.jpg">
-<link rel="stylesheet" href="assets/css/style.css?v=20261123d">
+<link rel="stylesheet" href="assets/css/style.css?v=20261123e">
 <script>document.documentElement.classList.add("js")</script>
 <style id="crew-style">
 .deck { grid-template-columns: repeat(3, 1fr); max-width: 360px; }
@@ -81,6 +81,29 @@
   60%  { opacity: .7; }
   100% { transform: translate(calc((var(--x) - 50%) * .35), -150%) scale(1.9); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .smoke i { animation: none; opacity: .35; transform: translateY(-40%) scale(1.2); } }
+
+/* 정명현: 누르면 뒤집히는 카드 */
+.flip { position: relative; z-index: 2; cursor: pointer; perspective: 900px; -webkit-tap-highlight-color: transparent; outline: none; }
+.flip:focus-visible .flip__in { outline: 2px solid var(--red); outline-offset: 3px; }
+.flip__in { position: relative; z-index: 1; transform-style: preserve-3d; transition: transform .7s cubic-bezier(.2,.9,.25,1.25); }
+.flip.is-flipped .flip__in { transform: rotateY(180deg); }
+.flip__front, .flip__back { -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.flip__front { position: relative; }
+.flip__back { position: absolute; inset: 0; transform: rotateY(180deg); }
+.flip__back > .mini { width: 100%; height: 100%; }
+.flip__hint { position: absolute; right: 6%; top: 6%; z-index: 2; padding: .2em .55em; font-size: 6cqi; font-weight: 800; letter-spacing: .06em;
+  text-decoration: none; color: #fff; background: var(--red); border-radius: 1cqi; animation: hint 1.8s ease-in-out infinite; }
+@keyframes hint { 0%,100% { transform: scale(1); } 50% { transform: scale(1.12); } }
+.flip:not(.is-flipped) .smoke { display: none; }
+.flip__flash { position: absolute; inset: -40%; z-index: 3; pointer-events: none; opacity: 0; border-radius: 50%;
+  background: radial-gradient(circle, #fff 0 12%, rgba(255,230,230,.9) 22%, rgba(214,59,62,.55) 42%, rgba(214,59,62,0) 66%); }
+.flip.is-burst .flip__flash { animation: flash .55s ease-out; }
+.flip.is-burst { animation: hit .5s steps(1); }
+.flip.is-burst .smoke i { animation-delay: 0s !important; animation-duration: 1.6s; }
+@keyframes flash { 0% { opacity: 0; transform: scale(.3); } 25% { opacity: 1; } 100% { opacity: 0; transform: scale(1.4); } }
+@keyframes hit { 0%,100% { transform: none; } 15% { transform: translate(4px,-3px) rotate(-1.2deg); } 30% { transform: translate(-5px,2px) rotate(1.4deg); }
+  45% { transform: translate(3px,4px) rotate(-.8deg); } 60% { transform: translate(-3px,-2px) rotate(.6deg); } 75% { transform: translate(2px,1px); } }
+@media (prefers-reduced-motion: reduce) { .flip__in { transition: none; } .flip.is-burst, .flip.is-burst .flip__flash, .flip__hint { animation: none; } }
 </style>
 </head>
 <body>
@@ -120,7 +143,7 @@
       <div class="mini"><i></i><span>NO.04</span><u class="mini__ph"><img src="assets/img/members/choi.jpg?v=20261123c" alt="최병재" loading="lazy"></u><b>최병재</b><em>팀원</em></div>
       <div class="mini"><i></i><span>NO.05</span><u class="mini__ph"><img src="assets/img/members/nam.jpg?v=20261123c" alt="남재현" loading="lazy"></u><b>남재현</b><em>팀원</em></div>
       <div class="mini"><i></i><span>NO.06</span><u class="mini__ph"><img src="assets/img/members/yoo.jpg?v=20261123c" alt="유지호" loading="lazy"></u><b>유지호</b><em>팀원</em></div>
-      <div class="aura-wrap"><span class="smoke smoke--back" aria-hidden="true"><i style="--x:-8%;--d:0s;--s:1.0"></i><i style="--x:12%;--d:1.1s;--s:0.8"></i><i style="--x:34%;--d:2.3s;--s:1.15"></i><i style="--x:58%;--d:0.6s;--s:0.9"></i><i style="--x:82%;--d:1.7s;--s:1.05"></i><i style="--x:104%;--d:2.9s;--s:0.85"></i><i style="--x:-12%;--d:3.4s;--s:0.7"></i><i style="--x:96%;--d:0.3s;--s:0.75"></i><i style="--x:46%;--d:3.9s;--s:1.0"></i><i style="--x:22%;--d:4.6s;--s:0.7"></i></span><div class="mini mini--aura"><i></i><span>NO.07</span><u class="mini__ph mini__ph--aura"><img src="assets/img/members/jung.png?v=20261123c" alt="정명현" loading="lazy"><s class="mini__tag">지상 최강의 생물</s><q class="mini__fx" aria-hidden="true">쿠구구구</q></u><b>정명현</b><em>팀원</em></div><span class="smoke smoke--front" aria-hidden="true"><i style="--x:-6%;--d:0.4s;--s:0.8"></i><i style="--x:106%;--d:1.9s;--s:0.8"></i><i style="--x:-10%;--d:3.1s;--s:0.6"></i><i style="--x:110%;--d:4.2s;--s:0.6"></i></span></div>
+      <div class="flip" role="button" tabindex="0" aria-pressed="false" aria-label="정명현 명찰 뒤집기"><span class="smoke smoke--back" aria-hidden="true"><i style="--x:-8%;--d:0s;--s:1.0"></i><i style="--x:12%;--d:1.1s;--s:0.8"></i><i style="--x:34%;--d:2.3s;--s:1.15"></i><i style="--x:58%;--d:0.6s;--s:0.9"></i><i style="--x:82%;--d:1.7s;--s:1.05"></i><i style="--x:104%;--d:2.9s;--s:0.85"></i><i style="--x:-12%;--d:3.4s;--s:0.7"></i><i style="--x:96%;--d:0.3s;--s:0.75"></i><i style="--x:46%;--d:3.9s;--s:1.0"></i><i style="--x:22%;--d:4.6s;--s:0.7"></i></span><div class="flip__in"><div class="mini flip__front"><i></i><span>NO.07</span><u class="mini__ph"><img src="assets/img/members/jungf.jpg?v=20261123e" alt="정명현" loading="lazy"><s class="flip__hint">TAP ↻</s></u><b>정명현</b><em>팀원</em></div><div class="flip__back"><div class="mini mini--aura"><i></i><span>NO.∞</span><u class="mini__ph mini__ph--aura"><img src="assets/img/members/jung.png?v=20261123c" alt="정명현, 지상 최강의 생물 모드" loading="lazy"><s class="mini__tag">지상 최강의 생물</s><q class="mini__fx" aria-hidden="true">쿠구구구</q></u><b>정</b><em>최강</em></div></div></div><span class="smoke smoke--front" aria-hidden="true"><i style="--x:-6%;--d:0.4s;--s:0.8"></i><i style="--x:106%;--d:1.9s;--s:0.8"></i><i style="--x:-10%;--d:3.1s;--s:0.6"></i><i style="--x:110%;--d:4.2s;--s:0.6"></i></span><b class="flip__flash" aria-hidden="true"></b></div>
       <div class="mini"><i></i><span>NO.08</span><u class="mini__ph mini__ph--none" aria-hidden="true"></u><b>이가연</b><em>팀원</em></div>
       <div class="mini mini--seal" aria-hidden="true"><i></i><strong>문제적<br>사람들</strong><small>똑바로 해라.</small></div>
     </div>
@@ -359,6 +382,17 @@
 </section>
 
 </main>
-<script src="assets/js/main.js?v=20261123d" defer></script>
+<script src="assets/js/main.js?v=20261123e" defer></script>
+<script id="flip-js">
+document.querySelectorAll('.flip').forEach(function (c) {
+  function go() {
+    var on = c.classList.toggle('is-flipped'); c.setAttribute('aria-pressed', on);
+    if (on) { c.classList.remove('is-burst'); void c.offsetWidth; c.classList.add('is-burst');
+      setTimeout(function () { c.classList.remove('is-burst'); }, 1700); }
+  }
+  c.addEventListener('click', go);
+  c.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+});
+</script>
 </body>
 </html>
