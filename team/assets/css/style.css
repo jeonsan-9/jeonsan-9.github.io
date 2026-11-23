@@ -310,3 +310,20 @@ figure.cell figcaption { z-index: 1; }
 .sheet--am .c-lim p { text-align: left; }
 @media (max-width: 960px) { .sheet--am { grid-template-areas: "screen screen" "bg2 flow" "res res" "lim lim" "cta cta"; } }
 @media (max-width: 640px) { .sheet--am { grid-template-areas: none; } }
+
+/* 안심집 extra screens + award photos */
+.sheet--am { grid-template-areas: "bg2 screen screen" "flow screen screen" "shots shots shots" "res res res" "aw lim lim" "aw cta cta"; }
+.c-shots { grid-area: shots; min-height: 0; background: #EDEEF1; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 2.4vw, 36px); }
+.c-shots figure { margin: 0; }
+.c-shots .frame { border-radius: 8px; overflow: hidden; box-shadow: 0 24px 48px -28px rgba(20,30,60,.35), 0 0 0 1px rgba(0,0,0,.05); }
+.c-shots img { width: 100%; height: auto; }
+.c-shots figcaption { margin-top: 12px; font-size: 11px; font-weight: 600; color: var(--gray); }
+.c-aw { grid-area: aw; min-height: 0; }
+.c-aw img { object-position: 50% 20%; }
+.sheet--am figure.c-aw::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 84px; pointer-events: none; background: linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,0)); }
+.sheet--am .c-lim { display: flex; flex-direction: column; justify-content: center; }
+.award-shot { margin-top: 28px; max-width: 300px; }
+.award-shot img { width: 100%; height: auto; }
+.award-shot figcaption { margin-top: 8px; font-size: 11px; font-weight: 600; color: var(--gray); }
+@media (max-width: 960px) { .sheet--am { grid-template-areas: "screen screen" "bg2 flow" "shots shots" "res res" "aw lim" "cta cta"; } }
+@media (max-width: 640px) { .sheet--am { grid-template-areas: none; } .c-shots { grid-template-columns: 1fr; } .c-aw { aspect-ratio: 3 / 4; } }
