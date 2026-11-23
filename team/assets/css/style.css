@@ -304,3 +304,9 @@ figure.cell figcaption { z-index: 1; }
   .meta__c3 { justify-self: end; padding: 8px 10px; margin: -8px -10px; border-radius: 4px; transition: background .3s; }
   .is-scrolled .meta__c3 { background: rgba(247,247,245,.92); box-shadow: 0 0 0 1px var(--line); }
 }
+
+/* P02 안심집: result + limit rows */
+.sheet--am { grid-template-areas: "bg2 screen screen" "flow screen screen" "res res res" "lim cta cta"; }
+.sheet--am .c-lim p { text-align: left; }
+@media (max-width: 960px) { .sheet--am { grid-template-areas: "screen screen" "bg2 flow" "res res" "lim lim" "cta cta"; } }
+@media (max-width: 640px) { .sheet--am { grid-template-areas: none; } }
