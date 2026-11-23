@@ -11,7 +11,7 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/Pretendard-subset.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:image" content="https://jeonsan-9.github.io/team/assets/img/hr_proto.jpg">
-<link rel="stylesheet" href="assets/css/style.css?v=20261123e">
+<link rel="stylesheet" href="assets/css/style.css?v=20261123g">
 <script>document.documentElement.classList.add("js")</script>
 <style id="crew-style">
 .deck { grid-template-columns: repeat(3, 1fr); max-width: 360px; }
@@ -104,6 +104,12 @@
 @keyframes hit { 0%,100% { transform: none; } 15% { transform: translate(4px,-3px) rotate(-1.2deg); } 30% { transform: translate(-5px,2px) rotate(1.4deg); }
   45% { transform: translate(3px,4px) rotate(-.8deg); } 60% { transform: translate(-3px,-2px) rotate(.6deg); } 75% { transform: translate(2px,1px); } }
 @media (prefers-reduced-motion: reduce) { .flip__in { transition: none; } .flip.is-burst, .flip.is-burst .flip__flash, .flip__hint { animation: none; } }
+
+/* 04 자원공유 멘토링 영상 */
+.poster-figure video { display: block; width: min(100%, 300px); height: auto; aspect-ratio: 9 / 16; margin: 0 auto 12px; background: #0B0F1C; object-fit: cover; }
+#mentoring .poster-figure figcaption { text-decoration: none; color: var(--gray); }
+#mentoring .ptitle__award { display: inline-block; margin-top: 10px; }
+.index__item[href="#mentoring"] { grid-column: 2; }
 </style>
 </head>
 <body>
@@ -120,6 +126,7 @@
     <a href="#p01">Smart Headrest</a>
     <a href="#p02">Ansim-jip Map</a>
     <a href="#international-studies">Research</a>
+    <a href="#mentoring">Mentoring</a>
   </nav>
 </header>
 
@@ -232,6 +239,11 @@
     <span class="index__no">03</span>
     <span class="index__cat">국제지역학</span>
     <span class="index__list">한·일 지역대학 유학생 인식 조사<br>협업 연구 · 포스터 발표 · 장려상</span>
+  </a>
+  <a class="index__item reveal" href="#mentoring">
+    <span class="index__no">04</span>
+    <span class="index__cat">Mentoring</span>
+    <span class="index__list">자원공유 멘토링 — 1등<br>AR 천체관측 · 간이망원경<br>친환경 교구 · 리더십 활동</span>
   </a>
 </section>
 
@@ -369,6 +381,33 @@
   </div>
 </section>
 
+<!-- ───────── 04 Mentoring ───────── -->
+<section class="project" id="mentoring">
+  <header class="ptitle">
+    <span class="ptitle__no reveal">04</span>
+    <div class="reveal">
+      <p class="ptitle__meta">동산도서관 자원공유 멘토링 · 팀 별동산궁산아래 · 2026.10</p>
+      <h2 class="ptitle__name">자원공유 멘토링</h2>
+      <p class="ptitle__ko">성당중학교 학생들과 함께한, 낮에 보는 우주</p>
+      <p class="ptitle__award">1등 · 2026학년도 동산도서관 자원공유 멘토링</p>
+    </div>
+  </header>
+  <div class="poster-study">
+    <div class="cell reveal">
+      <h3>밤하늘이 없는 오전, 우주를 어떻게 보여 줄까?</h3>
+      <p>2026년 10월 8일 오전 2시간 동안 계명대 동산도서관에서 성당중학교 학생들과 천문 체험 멘토링을 진행했습니다. 실제 밤하늘을 볼 수 없는 시간이어서 AR 천체관측과 간이망원경으로 낮에도 별을 살펴볼 수 있게 했습니다.</p>
+      <p>도서관 시설 투어, 천문학 기초 교육, 친환경 소재로 만드는 천문 교구, 눈가리기 리더십 활동을 하나의 프로그램으로 묶었습니다. 6월부터 약 5개월 동안 함께 기획하고 교구를 준비해 현장을 운영했고, 만족도 조사에서 긍정 응답 100%를 받았습니다.</p>
+      <p class="note">천체관측 동아리 AAA에서 함께 활동한 5명(전상훈 팀장, 장원준, 김형우, 정명현, 이가연)이 참여했습니다. 2026학년도 동산도서관 자원공유 멘토링에서 1등을 받았습니다.</p>
+    </div>
+    <figure class="poster-figure reveal">
+      <video controls playsinline preload="none" width="720" height="1280" poster="assets/video/mentoring-poster.jpg?v=20261123g">
+        <source src="assets/video/mentoring.mp4?v=20261123g" type="video/mp4">
+      </video>
+      <figcaption>활동 영상 · 1분 14초</figcaption>
+    </figure>
+  </div>
+</section>
+
 <!-- ───────── End ───────── -->
 <section class="spread end">
   <p class="end__word reveal">thank you</p>
@@ -382,7 +421,7 @@
 </section>
 
 </main>
-<script src="assets/js/main.js?v=20261123e" defer></script>
+<script src="assets/js/main.js?v=20261123g" defer></script>
 <script id="flip-js">
 document.querySelectorAll('.flip').forEach(function (c) {
   function go() {
