@@ -539,3 +539,11 @@ figure.cell figcaption { z-index: 1; }
   .meta__c3 { justify-self: end; padding: 8px 10px; margin: -8px -10px; border-radius: 4px; transition: background .3s; }
   .is-scrolled .meta__c3 { background: rgba(247,247,245,.92); box-shadow: 0 0 0 1px var(--line); }
 }
+
+/* More Works: field safety cases */
+.c-m6 { grid-area: m6; }
+.sheet--more { grid-template-areas: "m1 m2 photo" "m3 m4 photo" "m5 m6 photo"; }
+.c-find p + p { margin-top: 12px; }
+.sheet--more .note { text-align: left; margin-top: 12px; }
+@media (max-width: 960px) { .sheet--more { grid-template-areas: "m1 m2" "m3 m4" "m5 m6" "photo photo"; } }
+@media (max-width: 640px) { .sheet--more { grid-template-areas: none; } }
