@@ -547,3 +547,6 @@ figure.cell figcaption { z-index: 1; }
 .sheet--more .note { text-align: left; margin-top: 12px; }
 @media (max-width: 960px) { .sheet--more { grid-template-areas: "m1 m2" "m3 m4" "m5 m6" "photo photo"; } }
 @media (max-width: 640px) { .sheet--more { grid-template-areas: none; } }
+
+.mail { text-decoration: underline; text-underline-offset: 3px; }
+.mail:hover { color: var(--ink); }
