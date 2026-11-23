@@ -29,3 +29,11 @@
     items.forEach(function (el) { el.classList.add('is-in'); });
   }
 })();
+
+// once past the cover, tuck the corner meta away so it doesn't sit on top of content
+(function () {
+  var root = document.documentElement, t = false;
+  function upd() { t = false; root.classList.toggle('is-scrolled', window.scrollY > window.innerHeight * 0.6); }
+  window.addEventListener('scroll', function () { if (!t) { t = true; requestAnimationFrame(upd); } }, { passive: true });
+  upd();
+})();

@@ -22,10 +22,18 @@
         links.forEach(function (a) { a.classList.toggle('is-on', a.getAttribute('href') === '#' + e.target.id); });
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
-    ['about', 'index', 'p01', 'p02'].forEach(function (id) {
+    ['about', 'index', 'p01', 'p02', 'mentoring'].forEach(function (id) {
       var s = document.getElementById(id); if (s) spy.observe(s);
     });
   } else {
     items.forEach(function (el) { el.classList.add('is-in'); });
   }
+})();
+
+// once past the cover, tuck the corner meta away so it doesn't sit on top of content
+(function () {
+  var root = document.documentElement, t = false;
+  function upd() { t = false; root.classList.toggle('is-scrolled', window.scrollY > window.innerHeight * 0.6); }
+  window.addEventListener('scroll', function () { if (!t) { t = true; requestAnimationFrame(upd); } }, { passive: true });
+  upd();
 })();

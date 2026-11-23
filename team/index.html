@@ -4,14 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>problematic — 문제적 사람들 Team Portfolio</title>
-<meta name="description" content="계명대학교 기계공학과 팀 '문제적 사람들'. 스마트 헤드레스트와 안심집 지도, 직접 만들고 직접 시험한 두 개의 프로젝트.">
+<meta name="description" content="계명대학교 기계공학과 팀 '문제적 사람들'. 스마트 헤드레스트, 안심집 지도, 천문 체험 멘토링. 직접 만들고 직접 시험한 프로젝트 기록.">
 <meta property="og:title" content="문제적 사람들 — Team Portfolio">
 <meta property="og:description" content="직접 만들고, 직접 시험하고, 확인된 결과만 발표합니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jeonsan-9.github.io/team/">
+<link rel="canonical" href="https://jeonsan-9.github.io/team/">
 <meta name="theme-color" content="#F7F7F5">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/Pretendard-subset.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:image" content="https://jeonsan-9.github.io/team/assets/img/hr_proto.jpg">
-<link rel="stylesheet" href="assets/css/style.css?v=20261123g">
+<link rel="stylesheet" href="assets/css/style.css?v=20261123r">
 <script>document.documentElement.classList.add("js")</script>
 <style id="crew-style">
 .deck { grid-template-columns: repeat(3, 1fr); max-width: 360px; }
@@ -105,14 +108,14 @@
   45% { transform: translate(3px,4px) rotate(-.8deg); } 60% { transform: translate(-3px,-2px) rotate(.6deg); } 75% { transform: translate(2px,1px); } }
 @media (prefers-reduced-motion: reduce) { .flip__in { transition: none; } .flip.is-burst, .flip.is-burst .flip__flash, .flip__hint { animation: none; } }
 
-/* 04 자원공유 멘토링 영상 */
+/* 03 자원공유 멘토링 영상 */
 .poster-figure video { display: block; width: min(100%, 300px); height: auto; aspect-ratio: 9 / 16; margin: 0 auto 12px; background: #0B0F1C; object-fit: cover; }
 #mentoring .poster-figure figcaption { text-decoration: none; color: var(--gray); }
 #mentoring .ptitle__award { display: inline-block; margin-top: 10px; }
-.index__item[href="#mentoring"] { grid-column: 2; }
 </style>
 </head>
 <body>
+<a class="skip" href="#about">본문으로 건너뛰기</a>
 
 <!-- fixed corner meta -->
 <header class="meta" aria-label="사이트 정보">
@@ -123,10 +126,9 @@
     <a href="#about">About</a>
     <a href="#index">Works</a>
     <a href="#members">Members</a>
-    <a href="#p01">Smart Headrest</a>
-    <a href="#p02">Ansim-jip Map</a>
-    <a href="#international-studies">Research</a>
-    <a href="#mentoring">Mentoring</a>
+    <a class="nav-x" href="#p01">Smart Headrest</a>
+    <a class="nav-x" href="#p02">Ansim-jip Map</a>
+    <a class="nav-x" href="#mentoring">Mentoring</a>
   </nav>
 </header>
 
@@ -144,14 +146,14 @@
 <section class="spread about" id="about">
   <div class="about__left">
     <div class="deck reveal" aria-label="팀원 명찰 8장">
-      <div class="mini mini--lead"><i></i><span>NO.01</span><u class="mini__ph"><img src="assets/img/members/jeon.jpg?v=20261123c" alt="전상훈" loading="lazy"></u><b>전상훈</b><em>팀장</em></div>
-      <div class="mini"><i></i><span>NO.02</span><u class="mini__ph"><img src="assets/img/members/jang.jpg?v=20261123c" alt="장원준" loading="lazy"></u><b>장원준</b><em>팀원</em></div>
-      <div class="mini"><i></i><span>NO.03</span><u class="mini__ph"><img src="assets/img/members/kim.jpg?v=20261123c" alt="김형우" loading="lazy"></u><b>김형우</b><em>팀원</em></div>
-      <div class="mini"><i></i><span>NO.04</span><u class="mini__ph"><img src="assets/img/members/choi.jpg?v=20261123c" alt="최병재" loading="lazy"></u><b>최병재</b><em>팀원</em></div>
-      <div class="mini"><i></i><span>NO.05</span><u class="mini__ph"><img src="assets/img/members/nam.jpg?v=20261123c" alt="남재현" loading="lazy"></u><b>남재현</b><em>팀원</em></div>
-      <div class="mini"><i></i><span>NO.06</span><u class="mini__ph"><img src="assets/img/members/yoo.jpg?v=20261123c" alt="유지호" loading="lazy"></u><b>유지호</b><em>팀원</em></div>
-      <div class="flip" role="button" tabindex="0" aria-pressed="false" aria-label="정명현 명찰 뒤집기"><span class="smoke smoke--back" aria-hidden="true"><i style="--x:-8%;--d:0s;--s:1.0"></i><i style="--x:12%;--d:1.1s;--s:0.8"></i><i style="--x:34%;--d:2.3s;--s:1.15"></i><i style="--x:58%;--d:0.6s;--s:0.9"></i><i style="--x:82%;--d:1.7s;--s:1.05"></i><i style="--x:104%;--d:2.9s;--s:0.85"></i><i style="--x:-12%;--d:3.4s;--s:0.7"></i><i style="--x:96%;--d:0.3s;--s:0.75"></i><i style="--x:46%;--d:3.9s;--s:1.0"></i><i style="--x:22%;--d:4.6s;--s:0.7"></i></span><div class="flip__in"><div class="mini flip__front"><i></i><span>NO.07</span><u class="mini__ph"><img src="assets/img/members/jungf.jpg?v=20261123e" alt="정명현" loading="lazy"><s class="flip__hint">TAP ↻</s></u><b>정명현</b><em>팀원</em></div><div class="flip__back"><div class="mini mini--aura"><i></i><span>NO.∞</span><u class="mini__ph mini__ph--aura"><img src="assets/img/members/jung.png?v=20261123c" alt="정명현, 지상 최강의 생물 모드" loading="lazy"><s class="mini__tag">지상 최강의 생물</s><q class="mini__fx" aria-hidden="true">쿠구구구</q></u><b>정</b><em>최강</em></div></div></div><span class="smoke smoke--front" aria-hidden="true"><i style="--x:-6%;--d:0.4s;--s:0.8"></i><i style="--x:106%;--d:1.9s;--s:0.8"></i><i style="--x:-10%;--d:3.1s;--s:0.6"></i><i style="--x:110%;--d:4.2s;--s:0.6"></i></span><b class="flip__flash" aria-hidden="true"></b></div>
-      <div class="mini"><i></i><span>NO.08</span><u class="mini__ph"><img src="assets/img/members/lee.jpg?v=20261123f" alt="이가연" loading="lazy"></u><b>이가연</b><em>팀원</em></div>
+      <div class="mini mini--lead"><i></i><span>NO.01</span><u class="mini__ph"><img src="assets/img/members/jeon.jpg?v=20261123c" alt="전상훈" loading="lazy" decoding="async"></u><b>전상훈</b><em>팀장</em></div>
+      <div class="mini"><i></i><span>NO.02</span><u class="mini__ph"><img src="assets/img/members/jang.jpg?v=20261123c" alt="장원준" loading="lazy" decoding="async"></u><b>장원준</b><em>팀원</em></div>
+      <div class="mini"><i></i><span>NO.03</span><u class="mini__ph"><img src="assets/img/members/kim.jpg?v=20261123c" alt="김형우" loading="lazy" decoding="async"></u><b>김형우</b><em>팀원</em></div>
+      <div class="mini"><i></i><span>NO.04</span><u class="mini__ph"><img src="assets/img/members/choi.jpg?v=20261123c" alt="최병재" loading="lazy" decoding="async"></u><b>최병재</b><em>팀원</em></div>
+      <div class="mini"><i></i><span>NO.05</span><u class="mini__ph"><img src="assets/img/members/nam.jpg?v=20261123c" alt="남재현" loading="lazy" decoding="async"></u><b>남재현</b><em>팀원</em></div>
+      <div class="mini"><i></i><span>NO.06</span><u class="mini__ph"><img src="assets/img/members/yoo.jpg?v=20261123c" alt="유지호" loading="lazy" decoding="async"></u><b>유지호</b><em>팀원</em></div>
+      <div class="flip" role="button" tabindex="0" aria-pressed="false" aria-label="정명현 명찰 뒤집기"><span class="smoke smoke--back" aria-hidden="true"><i style="--x:-8%;--d:0s;--s:1.0"></i><i style="--x:12%;--d:1.1s;--s:0.8"></i><i style="--x:34%;--d:2.3s;--s:1.15"></i><i style="--x:58%;--d:0.6s;--s:0.9"></i><i style="--x:82%;--d:1.7s;--s:1.05"></i><i style="--x:104%;--d:2.9s;--s:0.85"></i><i style="--x:-12%;--d:3.4s;--s:0.7"></i><i style="--x:96%;--d:0.3s;--s:0.75"></i><i style="--x:46%;--d:3.9s;--s:1.0"></i><i style="--x:22%;--d:4.6s;--s:0.7"></i></span><div class="flip__in"><div class="mini flip__front"><i></i><span>NO.07</span><u class="mini__ph"><img src="assets/img/members/jungf.jpg?v=20261123e" alt="정명현" loading="lazy" decoding="async"><s class="flip__hint">TAP ↻</s></u><b>정명현</b><em>팀원</em></div><div class="flip__back"><div class="mini mini--aura"><i></i><span>NO.∞</span><u class="mini__ph mini__ph--aura"><img src="assets/img/members/jung.png?v=20261123c" alt="정명현, 지상 최강의 생물 모드" loading="lazy" decoding="async"><s class="mini__tag">지상 최강의 생물</s><q class="mini__fx" aria-hidden="true">쿠구구구</q></u><b>정</b><em>최강</em></div></div></div><span class="smoke smoke--front" aria-hidden="true"><i style="--x:-6%;--d:0.4s;--s:0.8"></i><i style="--x:106%;--d:1.9s;--s:0.8"></i><i style="--x:-10%;--d:3.1s;--s:0.6"></i><i style="--x:110%;--d:4.2s;--s:0.6"></i></span><b class="flip__flash" aria-hidden="true"></b></div>
+      <div class="mini"><i></i><span>NO.08</span><u class="mini__ph"><img src="assets/img/members/lee.jpg?v=20261123f" alt="이가연" loading="lazy" decoding="async"></u><b>이가연</b><em>팀원</em></div>
       <div class="mini mini--seal" aria-hidden="true"><i></i><strong>문제적<br>사람들</strong><small>똑바로 해라.</small></div>
     </div>
     <p class="deck__alumni reveal"><b>캡스톤(헤드레스트) 참여</b> 김기주 · 조환호 · Deniz Felix Unglaube</p>
@@ -176,7 +178,6 @@
       <h2>Projects</h2>
       <ul>
         <li><span>스마트 헤드레스트 — COSS 미래자동차 WE-Meet</span><time>26.06</time></li>
-        <li><span>국제지역학 — 한·일 지역대학 유학생 인식 조사</span><time>26.06</time></li>
         <li><span>안심집 지도 — 지역혁신 인재양성 연합 페스티발</span><time>26.10</time></li>
         <li><span>천문 체험 멘토링 (AR 천체관측 · 간이망원경) — 동산도서관 자원공유</span><time>26.10</time></li>
         <li><span>단디 짚자 — 정책 실패사례 DB · 대구 AI 드래프톤</span><time>26.11</time></li>
@@ -188,9 +189,8 @@
         <li><span><b>최우수상</b> 지역혁신 인재양성 연합 페스티발 — 안심집 지도</span><time>26.10</time></li>
         <li><span><b>우수상</b> 지역혁신 인재양성 연합 페스티발 — 스마트 헤드레스트</span><time>26.10</time></li>
         <li><span><b>최우수상</b> 교내 캡스톤디자인 우수작품 전시회 — 스마트 헤드레스트</span><time>26.10</time></li>
-        <li><span><b>1등</b> 동산도서관 자원공유 멘토링</span><time>26.10</time></li>
+        <li><span><b>최우수상</b> 동산도서관 자원공유 멘토링</span><time>26.10</time></li>
         <li><span><b>1위 · 최우수상</b> 기계공학과 캡스톤디자인 작품발표회 — 스마트 헤드레스트</span><time>26.06</time></li>
-        <li><span><b>장려상</b> 제7회 국제지역학 포스터 논문 발표회 — 한·일 유학생 연구</span><time>26.06</time></li>
         <li><span><b>장려상</b> RISE 생성형 AI 활용 사례 공모전 — 안심집 프로토타입</span><time>26.02</time></li>
       </ul>
     </div>
@@ -235,15 +235,10 @@
     <span class="index__cat">Web Service</span>
     <span class="index__list">안심집 지도 — 최우수상<br>Noise · Night Road<br>Living Pattern<br>Rent Compare</span>
   </a>
-  <a class="index__item reveal" href="#international-studies">
-    <span class="index__no">03</span>
-    <span class="index__cat">국제지역학</span>
-    <span class="index__list">한·일 지역대학 유학생 인식 조사<br>협업 연구 · 포스터 발표 · 장려상</span>
-  </a>
   <a class="index__item reveal" href="#mentoring">
-    <span class="index__no">04</span>
+    <span class="index__no">03</span>
     <span class="index__cat">Mentoring</span>
-    <span class="index__list">자원공유 멘토링 — 1등<br>AR 천체관측 · 간이망원경<br>친환경 교구 · 리더십 활동</span>
+    <span class="index__list">자원공유 멘토링 — 최우수상<br>AR 천체관측 · 간이망원경<br>친환경 교구 · 리더십 활동</span>
   </a>
 </section>
 
@@ -260,14 +255,14 @@
 
   <div class="sheet sheet--hr">
     <article class="cell cell--dark c-bg reveal">
-      <img src="assets/img/hr_gui.jpg" alt="" loading="lazy" aria-hidden="true">
+      <img src="assets/img/hr_gui.webp" width="1400" height="794" alt="" loading="lazy" decoding="async" aria-hidden="true">
       <div class="cell__in">
         <h3>Background</h3>
         <p>졸음과 시선 이탈은 운전자가 스스로 알아차리기 어렵습니다.<br>화면 경고만으로는 놓치기 쉬워, <b>머리 바로 뒤</b>에서<br>소리와 진동으로 직접 알려주는 장치를 만들었습니다.</p>
       </div>
     </article>
     <figure class="cell c-key reveal">
-      <img src="assets/img/hr_proto.jpg" alt="카메라와 7인치 디스플레이가 연결된 헤드레스트 시제품" loading="lazy">
+      <img src="assets/img/hr_proto.webp" width="1000" height="1573" alt="카메라와 7인치 디스플레이가 연결된 헤드레스트 시제품" loading="lazy" decoding="async">
       <figcaption>Key Visual — 헤드레스트 시제품</figcaption>
     </figure>
     <article class="cell c-sys reveal">
@@ -302,15 +297,15 @@
     <article class="cell c-ai reveal">
       <h3>AI Model</h3>
       <dl class="bars">
-        <div><dt>졸음</dt><dd><i style="--v:98.4%"></i><span>98.4%</span></dd></div>
-        <div><dt>하품</dt><dd><i style="--v:99.6%"></i><span>99.6%</span></dd></div>
-        <div><dt>휴대폰</dt><dd><i style="--v:97.5%"></i><span>97.5%</span></dd></div>
+        <div><dt>졸음</dt><dd style="--v:98.4%"><i></i><span>98.4%</span></dd></div>
+        <div><dt>하품</dt><dd style="--v:99.6%"><i></i><span>99.6%</span></dd></div>
+        <div><dt>휴대폰</dt><dd style="--v:97.5%"><i></i><span>97.5%</span></dd></div>
       </dl>
       <p class="note">검증 데이터 기준 · AIHub 원천 약 15TB에서 24,256장 선별</p>
     </article>
-    <figure class="cell c-p1 reveal"><img src="assets/img/hr_inside.jpg" alt="분해한 헤드레스트 내부의 배선과 보드" loading="lazy"><figcaption>Inside — 내부 배선</figcaption></figure>
-    <figure class="cell c-p2 reveal"><img src="assets/img/hr_team.jpg" alt="강의실에서 자료를 보며 회의하는 팀원들" loading="lazy"><figcaption>Meeting — 팀 회의</figcaption></figure>
-    <figure class="cell c-p3 reveal"><img src="assets/img/hr_mentoring.jpg" alt="테이블에 모여 앉은 팀원과 멘토" loading="lazy"><figcaption>Mentoring — 멘토링</figcaption></figure>
+    <figure class="cell c-p1 reveal"><img src="assets/img/hr_inside.webp" width="1400" height="1050" alt="분해한 헤드레스트 내부의 배선과 보드" loading="lazy" decoding="async"><figcaption>Inside — 내부 배선</figcaption></figure>
+    <figure class="cell c-p2 reveal"><img src="assets/img/hr_team.webp" width="1400" height="1051" alt="강의실에서 자료를 보며 회의하는 팀원들" loading="lazy" decoding="async"><figcaption>Meeting — 팀 회의</figcaption></figure>
+    <figure class="cell c-p3 reveal"><img src="assets/img/hr_mentoring.webp" width="1400" height="1050" alt="테이블에 모여 앉은 팀원과 멘토" loading="lazy" decoding="async"><figcaption>Mentoring — 멘토링</figcaption></figure>
     <article class="cell c-lim reveal">
       <h3>Limit &amp; Next</h3>
       <p>실주행·저조도 시험은 아직 하지 않았습니다. 리프트(전후 위치 조절) 기구는 설계·제작했지만 운반 중 파손되어 시연에서 제외했습니다.</p>
@@ -337,7 +332,7 @@
       <p>공항을 낀 대구 동구 지저동에서 집을 고를 때 놓치기 쉬운 항공기 소음, 밤길, 생활 동선을 내 생활유형에 맞춰 한 지도에서 비교합니다.</p>
     </article>
     <figure class="cell c-screen reveal">
-      <div class="frame"><img src="assets/img/ansim_main.jpg" alt="안심집 지도 첫 화면: 생활유형 선택" loading="lazy"></div>
+      <div class="frame"><img src="assets/img/ansim_main.jpg" alt="안심집 지도 첫 화면: 생활유형 선택" loading="lazy" decoding="async"></div>
       <figcaption>Main — 생활유형 선택 화면</figcaption>
     </figure>
     <article class="cell c-flow reveal">
@@ -357,39 +352,15 @@
   </div>
 </section>
 
-<!-- ───────── P03 International Studies ───────── -->
-<section class="project" id="international-studies">
-  <header class="ptitle">
-    <span class="ptitle__no reveal">03</span>
-    <div class="reveal">
-      <p class="ptitle__meta">협업 연구 · 먼가작고귀여운논문 팀 · 2026.06</p>
-      <h2 class="ptitle__name">국제지역학</h2>
-      <p class="ptitle__ko">유학생 인식으로 본 한·일 지역대학의 글로컬 경쟁력</p>
-    </div>
-  </header>
-  <div class="poster-study">
-    <div class="cell reveal">
-      <h3>학생들은 졸업 후에도 그 지역에 남고 싶을까?</h3>
-      <p>계명대학교 유학생 28명과 긴키대학교 유학생 27명의 응답을 비교했습니다. 두 집단은 대학의 국제·지역 경쟁력을 비슷하게 평가했지만, 졸업 후 정착 의향은 긴키대 응답자가 평균 0.76점 높았습니다.</p>
-      <p>연구팀은 언어 능력과 체류기간의 차이를 함께 살피고, 지역 기업 인턴십과 다국어 취업 정보 제공을 제안했습니다.</p>
-      <p class="note">포스터에 이름을 올린 전상훈과 윤재석이 함께한 연구입니다. 전상훈은 팀장으로 조사·분석과 포스터 제작, 발표 준비를 총괄했습니다. 제7회 국제지역학 포스터 논문 발표회에서 38개 팀 중 3위로 장려상을 받았습니다.</p>
-    </div>
-    <figure class="poster-figure reveal">
-      <a href="../assets/img/international-poster.webp"><img src="../assets/img/international-poster-sm.webp" width="900" height="1274" alt="계명대와 긴키대 유학생 설문 결과와 지역 정착 제안을 담은 연구 포스터" loading="lazy"></a>
-      <figcaption><a href="../assets/img/international-poster.webp">발표 포스터 크게 보기 ↗</a></figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- ───────── 04 Mentoring ───────── -->
+<!-- ───────── P03 Mentoring ───────── -->
 <section class="project" id="mentoring">
   <header class="ptitle">
-    <span class="ptitle__no reveal">04</span>
+    <span class="ptitle__no reveal">03</span>
     <div class="reveal">
       <p class="ptitle__meta">동산도서관 자원공유 멘토링 · 팀 별동산궁산아래 · 2026.10</p>
       <h2 class="ptitle__name">자원공유 멘토링</h2>
       <p class="ptitle__ko">성당중학교 학생들과 함께한, 낮에 보는 우주</p>
-      <p class="ptitle__award">1등 · 2026학년도 동산도서관 자원공유 멘토링</p>
+      <p class="ptitle__award">최우수상 · 2026학년도 동산도서관 자원공유 멘토링</p>
     </div>
   </header>
   <div class="poster-study">
@@ -397,7 +368,7 @@
       <h3>밤하늘이 없는 오전, 우주를 어떻게 보여 줄까?</h3>
       <p>2026년 10월 8일 오전 2시간 동안 계명대 동산도서관에서 성당중학교 학생들과 천문 체험 멘토링을 진행했습니다. 실제 밤하늘을 볼 수 없는 시간이어서 AR 천체관측과 간이망원경으로 낮에도 별을 살펴볼 수 있게 했습니다.</p>
       <p>도서관 시설 투어, 천문학 기초 교육, 친환경 소재로 만드는 천문 교구, 눈가리기 리더십 활동을 하나의 프로그램으로 묶었습니다. 6월부터 약 5개월 동안 함께 기획하고 교구를 준비해 현장을 운영했고, 만족도 조사에서 긍정 응답 100%를 받았습니다.</p>
-      <p class="note">천체관측 동아리 AAA에서 함께 활동한 5명(전상훈 팀장, 장원준, 김형우, 정명현, 이가연)이 참여했습니다. 2026학년도 동산도서관 자원공유 멘토링에서 1등을 받았습니다.</p>
+      <p class="note">천체관측 동아리 AAA에서 함께 활동한 5명(전상훈 팀장, 장원준, 김형우, 정명현, 이가연)이 참여했습니다. 2026학년도 동산도서관 자원공유 멘토링에서 최우수상을 받았습니다.</p>
     </div>
     <figure class="poster-figure reveal">
       <video controls playsinline preload="none" width="720" height="1280" poster="assets/video/mentoring-poster.jpg?v=20261123g">
@@ -414,14 +385,14 @@
   <span class="cover__rule reveal" aria-hidden="true"></span>
   <p class="cover__name reveal">똑바로 해라.</p>
   <div class="end__foot">
-    <img src="assets/img/kmu_emblem.png" alt="계명대학교 엠블럼" width="423" height="220" loading="lazy">
+    <img src="assets/img/kmu_emblem.png" alt="계명대학교 엠블럼" width="423" height="220" loading="lazy" decoding="async">
     <p>문제적 사람들 · 계명대학교 기계공학과<br>© 2026 Problematic Men</p>
     <a href="#cover">Top ↑</a>
   </div>
 </section>
 
 </main>
-<script src="assets/js/main.js?v=20261123g" defer></script>
+<script src="assets/js/main.js?v=20261123r" defer></script>
 <script id="flip-js">
 document.querySelectorAll('.flip').forEach(function (c) {
   function go() {
