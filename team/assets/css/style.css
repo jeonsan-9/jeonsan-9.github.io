@@ -64,6 +64,7 @@ ul, ol { list-style: none; }
   font-weight: 500; letter-spacing: -.065em; line-height: .9;
   margin-left: -.04em;
 }
+.cover__logo { display: block; width: clamp(44px, 5vw, 64px); height: auto; margin-bottom: clamp(28px, 5vh, 52px); }
 .cover__rule { display: block; width: 1.5px; height: clamp(80px, 13vh, 140px); background: var(--ink); margin: clamp(28px, 4vh, 44px) 0 28px; }
 .cover__name { font-size: 17px; font-weight: 600; letter-spacing: -.01em; }
 .cover__sub { margin-top: 14px; font-size: 12px; color: var(--gray); line-height: 1.5; }
