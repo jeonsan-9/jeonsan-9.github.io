@@ -328,3 +328,19 @@ figure.cell figcaption { z-index: 1; }
 .award-shot figcaption { margin-top: 8px; font-size: 11px; font-weight: 600; color: var(--gray); }
 @media (max-width: 960px) { .sheet--am { grid-template-areas: "screen screen" "bg2 flow" "shots shots" "res res" "aw lim" "cta cta"; } }
 @media (max-width: 640px) { .sheet--am { grid-template-areas: none; } .c-shots { grid-template-columns: 1fr; } .c-aw { aspect-ratio: 3 / 4; } }
+
+/* P04 대구 실전 리그 */
+.sheet--rl { grid-template-areas: "bg2 screen screen" "flow screen screen" "shots shots shots" "res res res" "aw aw lim" "aw aw cta"; }
+.sheet--rl .c-shots { grid-template-columns: 1fr 1fr; }
+.sheet--rl .c-aw { min-height: 0; background: #F1ECE2; }
+.sheet--rl .c-aw img { object-fit: contain; height: auto; }
+.sheet--rl figure.c-aw figcaption { color: var(--gray); text-shadow: none; }
+.sheet--rl .c-lim { display: flex; flex-direction: column; justify-content: center; }
+.sheet--rl .c-res .note { margin-top: 28px; text-align: left; }
+.rl-files li { padding: 13px 0; border-bottom: 1px solid var(--line); font-size: 15px; font-weight: 600; }
+.rl-files li:first-child { border-top: 1px solid var(--line); }
+.rl-files a:hover { color: var(--red); }
+.rl-files + .note { margin-top: 20px; }
+@media (min-width: 961px) { .index__item[href="#p04"] { grid-column: 2; } }
+@media (max-width: 960px) { .sheet--rl { grid-template-areas: "screen screen" "bg2 flow" "shots shots" "res res" "aw aw" "lim cta"; } }
+@media (max-width: 640px) { .sheet--rl { grid-template-columns: 1fr; grid-template-areas: none; } .sheet--rl > * { grid-area: auto; } .sheet--rl .c-aw { aspect-ratio: auto; } .sheet--rl .c-shots { grid-template-columns: 1fr; } }
